@@ -14,7 +14,7 @@ public class CajaCollisionDetection : MonoBehaviour
        void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.CompareTag("Piso")){
-            
+           cajaMovementScript.IncreaseSpeed(); 
            cajaMovementScript.MoveBoxToRandomPosition();
         }
     }
